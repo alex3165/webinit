@@ -1,6 +1,6 @@
 # Simple web project initializer for Mac
 
-The script include jquery and requirejs. You can modify the foo folder to adapt your initialize folder to your needs.
+The script generate a simple web project initialisation including a css reset, jquery and requirejs. You can modify the foo folder to adapt your initialize folder to your needs.
 
 ## How to install ?
 
