@@ -11,7 +11,7 @@ clone the repository
 >> git clone https://github.com/alex3165/webinit.git
 
 Add an alias for the script in your .bash_profile file
->> alias=$HOME/webinit/init.sh
+>> alias webinit=$HOME/webinit/init.sh
 
 ## How to use
 
