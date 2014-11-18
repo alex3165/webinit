@@ -1,4 +1,4 @@
-# Simple web project initializer for Mac
+# Simple web project initializer for Mac and Linux
 
 The script generate a simple web project initialization including css reset, jquery and requirejs. You can modify the foo folder to adapt your initialize folder to your needs.
 
