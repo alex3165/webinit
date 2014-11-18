@@ -10,9 +10,11 @@
 ## TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 ##
 ## 0. You just DO WHAT THE FUCK YOU WANT TO.
-
-
-PATHINIT=${HOME}/Desktop
+if [[ uname=="Linux" ]]; then
+    PATHINIT=${HOME}/Bureau
+else
+    PATHINIT=${HOME}/Desktop
+fi
 PROJECTNAME="webinit"
 
 if [[ -n "$1" ]]; then
@@ -26,4 +28,9 @@ fi
 cd $PATHINIT
 mkdir $PROJECTNAME
 cp -r ${HOME}/webinit/foo/* $PATHINIT/$PROJECTNAME/
-open -a Terminal $PATHINIT/$PROJECTNAME/
+
+if [[ uname=='Linux' ]]; then
+    gnome-terminal --working-directory=$PATHINIT/$PROJECTNAME/
+else
+    open -a Terminal $PATHINIT/$PROJECTNAME/
+fi
